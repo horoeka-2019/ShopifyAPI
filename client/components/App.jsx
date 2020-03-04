@@ -21,7 +21,7 @@ class App extends React.Component {
   render() {
     return (
     <React.Fragment>
-    <Main bored={this.state.bored} />
+   {this.state.bored &&  <Main bored={this.state.bored} />}
     </React.Fragment>
     )}
 }
