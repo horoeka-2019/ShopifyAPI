@@ -1,10 +1,8 @@
-  
 import request from 'superagent'
 
-const boredURL = 'http://localhost:3000/api/v1/' // localhost3000 is the server. GET reqests served here, which means the info from the external database is served up here. This addy is just a data source. boredURL is holding our data 
+const jokeURL = '/api/v1/joke'
 
-//removed bored from end of url
 
-export function getTransactions () {
-  return request.get(boredURL) // this is the GET request from the client (being sent to server) 
+export function getJoke () {
+  return request.get(jokeURL)
 }

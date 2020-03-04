@@ -5,10 +5,15 @@ module.exports = router
 
 // server routes, talking to the external data source
 
-router.get('/', (req, res) => {
+
+router.get('/joke', (req, res) => {
   return request
-    .get('https://www.boredapi.com/api/activity') // asking for info from here
-    .then(response => { // response from external
-      res.json(response.body) // this sends the response back to the client
+    .get('https://official-joke-api.appspot.com/random_joke')
+    .then(response => {
+      res.json(response.body)
     })
 })
+
+// GET /admin/api/2020-01/orders.json?since_id=1863560101962
+
+// response.body
