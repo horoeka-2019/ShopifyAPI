@@ -1,5 +1,6 @@
 import React from "react";
 import Main from "./Main";
+import * as api from '../api'
 
 class App extends React.Component {
   state = {

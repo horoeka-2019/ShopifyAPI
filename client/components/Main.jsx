@@ -1,6 +1,6 @@
 import React from 'react'
 
-import * as api from '../api'
+
 
 
 class Main extends React.Component {
@@ -9,8 +9,8 @@ class Main extends React.Component {
   render () {
     return (
       <React.Fragment>
-        
-        {this.state.bored}
+        {this.props.bored.activity}
+        {this.props.bored.type}
        
 
       </React.Fragment>
