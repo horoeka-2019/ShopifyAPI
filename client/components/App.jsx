@@ -2,31 +2,32 @@ import React from 'react'
 
 import * as api from '../api'
 
-
 import Main from './Main'
 
 class App extends React.Component {
   state = {
-   
-    joke: null
+    order: null
   }
 
-  componentDidMount () { // opens up communication, trigger API
+  componentDidMount () { 
     
-    api.getJoke()
+    api.getOrder()
       .then(response => {
         this.setState({
-          joke: response.body
+          order: response.body
+          
         })
+        
       })
   }
 
   render () {
+    console.log(this.state.order) // currently returning null
     return (
       <React.Fragment>
       
         
-        {this.state.joke && <Main joke={this.state.joke}/>}
+        {this.state.order && <Main order={this.state.order}/>}
 
       </React.Fragment>
 

@@ -1,8 +1,8 @@
 import request from 'superagent'
 
-const jokeURL = '/api/v1/joke'
+const orderURL = '/api/v1/joke'
 
 
-export function getJoke () {
-  return request.get(jokeURL)
+export function getOrder () {
+  return request.get(orderURL)
 }
