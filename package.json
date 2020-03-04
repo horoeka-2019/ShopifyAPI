@@ -29,7 +29,10 @@
     ]
   },
   "dependencies": {
+    "bootstrap": "^4.4.1",
+    "cors": "^2.8.5",
     "express": "^4.16.4",
+    "pg": "^7.18.2",
     "superagent": "^5.0.2"
   },
   "devDependencies": {
