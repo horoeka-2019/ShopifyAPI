@@ -11,7 +11,9 @@ router.get('/joke', (req, res) => {
   .then(response => {
     res.json(response.body)
   })
+  .catch(err => alert(err))
 })
+
 
 
 // basic auth: GET https://{username}:{password}@{shop}.myshopify.com/admin/api/2020-01/shop.json
