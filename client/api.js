@@ -5,6 +5,6 @@ const boredURL = 'http://localhost:3000/api/v1/' // localhost3000 is the server.
 
 //removed bored from end of url
 
-export function getActivity () {
+export function getTransactions () {
   return request.get(boredURL) // this is the GET request from the client (being sent to server) 
 }
