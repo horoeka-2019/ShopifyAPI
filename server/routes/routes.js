@@ -8,7 +8,13 @@ module.exports = router
 
 router.get('/joke', (req, res) => {
   return request
-    .get('https://official-joke-api.appspot.com/random_joke')
+    .get('https://official-joke-api.appspot.com/random_joke') //place in url frm postmasn
+    // .withCredentials() 
+    // https://paintvine.myshopify.com/admin/api/2020-01/orders.json
+    // GET https://{username}:{password}@{shop}.myshopify.com/admin/api/2020-01/shop.json
+
+    // https://paintvine.myshopify.com/admin/api/2020-01/orders.json?since_id=123
+
     .then(response => {
       res.json(response.body)
     })

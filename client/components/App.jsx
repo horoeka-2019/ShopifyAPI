@@ -3,7 +3,7 @@ import React from 'react'
 import * as api from '../api'
 
 
-import Joke from './Joke'
+import Main from './Main'
 
 class App extends React.Component {
   state = {
@@ -26,7 +26,7 @@ class App extends React.Component {
       <React.Fragment>
       
         
-        {this.state.joke && <Joke joke={this.state.joke}/>}
+        {this.state.joke && <Main joke={this.state.joke}/>}
 
       </React.Fragment>
 

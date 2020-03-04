@@ -1,6 +1,6 @@
 import React from 'react'
 
-class Joke extends React.Component {
+class Main extends React.Component {
   render () {
     const { setup, type, punchline } = this.props.joke
     return (
@@ -15,4 +15,4 @@ class Joke extends React.Component {
   }
 }
 
-export default Joke
+export default Main
