@@ -3,7 +3,7 @@ const request = require('superagent')
 
 module.exports = router
 
-// server routes, talking to the external data source
+
 const vineAPI = 'https://9aea6c07b34a4b45c1d8d88861fab0d6:63c91fc3e75bc93e0d419566986c7c08@paintvine.myshopify.com/admin/api/2020-01/orders.json?since_id=1863560101962' // working link in postman
 
 router.get('/order', (req, res) => {
@@ -19,7 +19,4 @@ router.get('/order', (req, res) => {
   })
 })
 
-// {9aea6c07b34a4b45c1d8d88861fab0d6}:{63c91fc3e75bc93e0d419566986c7c08}@
-
-// basic auth: GET https://{username}:{password}@{shop}.myshopify.com/admin/api/2020-01/shop.json
 

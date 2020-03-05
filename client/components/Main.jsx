@@ -1,19 +1,21 @@
-import React from 'react'
+import React from "react";
+import EachOrder from './EachOrder'
 
 class Main extends React.Component {
-  render () {
-    const {id, email, number } = this.props.order
+  render() {
+
     return (
       <React.Fragment>
         <h1>Here are some orders:</h1>
-        <h2>{id}</h2>
-        {/* <h2>{email}</h2> */}
-        {/* <h2>{number}</h2> */}
-        
+        <div>{this.props.birds.map(order => (
+              <EachOrder key={order.id} {...order} />
+            ))}</div>
+            
+
 
       </React.Fragment>
-    )
+    );
   }
 }
 
-export default Main
+export default Main;
