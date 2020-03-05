@@ -27,8 +27,8 @@ class App extends React.Component {
           {this.state.order.map(function(item, index) {
             return (
               <div>
-                <h3>{item.id}</h3>
-                <h3>{item.email}</h3>
+                <h3>{item.name}</h3>
+                <h3></h3>
               </div>
             );
           })}
