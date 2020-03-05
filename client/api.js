@@ -7,3 +7,10 @@ export function getOrder () {
   console.log('getorder api hit')
   return request.get(orderURL)
 }
+
+const transURL = 'http://localhost:3000/api/v1/trans'
+
+export function getTrans () {
+  console.log('gettrans api hit')
+  return request.get(transURL)
+}
