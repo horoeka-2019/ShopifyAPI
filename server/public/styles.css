@@ -1,0 +1,18 @@
+body {
+    background-color: rgb(218, 168, 104);
+    color: rgb(65, 65, 65);
+    margin: 3rem;
+    font-family: monospace;
+}
+
+.container {
+    background-color: beige;
+    margin: 5rem;
+    padding: 1rem 5rem 2rem 5rem;
+}
+
+.title {
+    font-size: 4rem;
+    text-align: center;
+}
+
